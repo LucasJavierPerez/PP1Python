@@ -40,9 +40,7 @@ def clima():
 
 
     return render_template(
-        "clima.html", 
-        ciudad=ciudad,
-        datos_clima=datos_clima["current_weather"]
+        "clima.html", ciudad=ciudad, datos_clima=datos_clima["current_weather"]
     )
 
 
