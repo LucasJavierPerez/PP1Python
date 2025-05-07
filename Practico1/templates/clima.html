@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Clima en {{ ciudad }}{% endblock %}
+
+{% block header %}Clima en {{ ciudad }}{% endblock %}
+
+{% block content %}
+    <div class="clima-info">
+        <h2>Datos actuales del clima</h2>
+        
+        <div>
+            <strong>Temperatura:</strong> 
+            <span class="clima-valor">{{ datos_clima.temperature }}°C</span>
+        </div>
+        
+        <div>
+            <strong>Velocidad del Viento:</strong> 
+            <span class="clima-valor">{{ datos_clima.windspeed }} km/h</span>
+        </div>
+        
+        <div>
+            <strong>Dirección del Viento:</strong> 
+            <span class="clima-valor">{{ datos_clima.winddirection }}°</span>
+        </div>
+
+    </div>
+    
+{% endblock %}
